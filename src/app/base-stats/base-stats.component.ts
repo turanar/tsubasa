@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { Player } from './classes/player';
-import  {Stats} from './classes/stats';
+import { Player } from '../classes/player';
 import { LocalStorage } from '@ngx-pwa/local-storage';
-import {PlayerData} from './classes/playerdata';
+import {PlayerData} from '../classes/playerdata';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-base-stats',
+  templateUrl: './base-stats.component.html',
+  styleUrls: ['./base-stats.component.css']
 })
-export class AppComponent {
+export class BaseStatsComponent {
   public player: Player = new Player;
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   public page: number;

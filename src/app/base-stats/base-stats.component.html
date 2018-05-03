@@ -1,0 +1,35 @@
+<div class="container-fluid" (swipeleft)="swipe($event.type)" (swiperight)="swipe($event.type)">
+  <div class="row">
+    <div class="col-sm d-xl-block" [class.d-none]="page!=0">
+      <h5 class="text-center"><a name="base-stats">Base Stats</a></h5>
+      <app-player-stats [player]="player" [stats]="player.data.base"></app-player-stats>
+    </div>
+    <div class="col-sm d-xl-block" [class.d-none]="page!=1">
+      <h5 class="text-center"><a name="base-stats">Passive</a></h5>
+      <app-player-stats [player]="player" [stats]="player.data.bonus['passive']" [bonus]="true"></app-player-stats>
+    </div>
+    <div class="col-sm d-xl-block" [class.d-none]="page!=2">
+      <h5 class="text-center"><a name="base-stats">Formation</a></h5>
+      <app-player-stats [player]="player" [stats]="player.data.bonus['formation']" [bonus]="true"></app-player-stats>
+    </div>
+    <div class="col-sm d-xl-block" [class.d-none]="page!=3">
+      <h5 class="text-center"><a name="base-stats">Club</a></h5>
+      <app-player-stats [player]="player" [stats]="player.data.bonus['conf']" [bonus]="true"></app-player-stats>
+    </div>
+    <div class="col-sm d-xl-block" [class.d-none]="page!=4">
+      <h5 class="text-center"><a name="base-stats">Final Stats</a></h5>
+      <app-player-stats-result [player]="player"></app-player-stats-result>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm d-xl-none">
+      <div class="text-center">
+        <span class="dot" [class.active]="page==0"></span>
+        <span class="dot" [class.active]="page==1"></span>
+        <span class="dot" [class.active]="page==2"></span>
+        <span class="dot" [class.active]="page==3"></span>
+        <span class="dot" [class.active]="page==4"></span>
+      </div>
+    </div>
+  </div>
+</div>

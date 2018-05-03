@@ -1,0 +1,113 @@
+<div class="stats result">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Attack</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Dribble</td>
+      <td class="right">
+        {{ specialSkills  ? player.dribble_ts : player.dribble }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Shot</td>
+      <td class="right">
+        {{ specialSkills  ? player.shot_ts : player.shot }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Pass</td>
+      <td class="right">
+        {{ specialSkills  ? player.pass_ts : player.pass }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="stats result">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Defense</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Tackle</td>
+      <td class="right">
+        {{ specialSkills  ? player.tackle_ts : player.tackle }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Block</td>
+      <td class="right">
+        {{ specialSkills  ? player.block_ts : player.block }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Intercept</td>
+      <td class="right">
+        {{ specialSkills  ? player.intercept_ts : player.intercept }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="stats result">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Saving</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Catch</td>
+      <td class="right">
+        {{ specialSkills  ? player.catch_ts : player.catch }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Punch</td>
+      <td class="right">
+        {{ specialSkills  ? player.punch_ts : player.punch }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="stats result">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Physical</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Speed</td>
+      <td class="right">
+        {{ player.speed }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Power</td>
+      <td class="right">
+        {{ player.power }}
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Technique</td>
+      <td class="right">
+        {{ player.technique }}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { Player } from './classes/player';
-import  {Stats} from './classes/stats';
+import { Player } from '../classes/player';
 import { LocalStorage } from '@ngx-pwa/local-storage';
-import {PlayerData} from './classes/playerdata';
+import {PlayerData} from '../classes/playerdata';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-base-stats',
+  templateUrl: './special-skills.component.html',
+  styleUrls: ['./special-skills.component.css']
 })
-export class AppComponent {
+export class SpecialSkillsComponent {
   public player: Player = new Player;
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   public page: number;
@@ -31,7 +30,7 @@ export class AppComponent {
     console.log(action);
 
     if (action === 'swipeleft') {
-      this.page = (this.page >= 4) ? 4 : this.page + 1;
+      this.page = (this.page >= 3) ? 3 : this.page + 1;
     }
 
     if (action === 'swiperight') {

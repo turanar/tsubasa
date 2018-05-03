@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~ngx-swiper-wrapper/dist/lib/swiper.component.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-weight: Bold;
+  height: 100%;
+  background: url(assets/banner.png) no-repeat;
+}
+
+@media (orientation: portrait) {
+  body {
+    background-size: 200% auto;
+  }
+}
+
+mat-toolbar {
+  height: 130px !important;
+}
+
+@media (orientation: portrait) {
+  mat-toolbar {
+    height: 90px !important;
+  }
+}
+
+mat-sidenav-container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+td-layout-nav mat-toolbar {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,78 @@
+.stats {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid #203399;
+  margin-bottom: 20px;
+  background-color: #203399;
+}
+
+.stats.bonus {
+  background-color: #209933;
+  border: 2px solid #209933;
+}
+
+.stats table {
+  background-color: white;
+}
+
+*:focus {
+  outline: none;
+}
+
+.stats table {
+  border-collapse: collapse;
+}
+
+.stats table tr:nth-child(even) {
+  background: #e9f5fb;
+}
+
+.stats table tr:nth-child(even) input {
+  background: #e9f5fb;
+}
+
+.stats table td {
+  padding: 3px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+.stats table th {
+  padding:0;
+}
+.stats thead th {
+  text-align: center;
+  background-color: #203399;
+  color: white
+}
+
+.stats.bonus thead th {
+  background-color: #209933;
+}
+
+.right {
+  text-align: right;
+  padding: 3px;
+  width: 180px;
+  line-height: 22px;
+}
+.left {
+  text-align: left;
+  padding: 3px;
+  width: 80px;
+}
+.stats input {
+  border:0px none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: Bold;
+  text-align: right;
+  font-size: 16px;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

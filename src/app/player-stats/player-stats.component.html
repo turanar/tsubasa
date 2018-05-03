@@ -1,0 +1,124 @@
+<div class="stats" [class.bonus]="bonus">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Attack</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Dribble</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.dribble" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Shot</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.shot" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Pass</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.pass" value="5000"/>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="stats" [class.bonus]="bonus">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Defense</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Tackle</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.tackle" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Block</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.block" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Intercept</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.intercept" value="5000"/>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="stats" [class.bonus]="bonus">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Saving</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Catch</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.catch" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Punch</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.punch" value="5000"/>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="stats" [class.bonus]="bonus">
+  <table style="width:100%;border:none;">
+    <thead>
+    <tr>
+      <th colspan="2">Physical</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="left">Speed</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.speed" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Power</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.power" value="5000"/>
+      </td>
+    </tr>
+    <tr>
+      <td class="left">Technique</td>
+      <td class="right">
+        <input (click)="$event.target.select()" type="number" (ngModelChange)="onChange($event)"
+               [(ngModel)]="stats.technique" value="5000"/>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
