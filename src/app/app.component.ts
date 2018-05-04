@@ -1,18 +1,21 @@
 import { Component } from '@angular/core';
 import { Player } from './classes/player';
-import  {Stats} from './classes/stats';
 import { LocalStorage } from '@ngx-pwa/local-storage';
 import {PlayerData} from './classes/playerdata';
+import {MatSlideToggle} from '@angular/material';
+import { AfterViewInit} from '@angular/core';
+import {ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   public player: Player = new Player;
   SWIPE_ACTION = { LEFT: 'swipeleft', RIGHT: 'swiperight' };
   public page: number;
+  @ViewChild(MatSlideToggle) checkbox: MatSlideToggle;
 
   constructor(protected localStorage: LocalStorage) {
     this.localStorage.getItem<PlayerData>('player.data').subscribe((data) => {
@@ -39,5 +42,9 @@ export class AppComponent {
     }
 
     console.log(this.page);
+  }
+
+  ngAfterViewInit() {
+    console.log('afterViewInit => ', this.checkbox);
   }
 }

@@ -2,14 +2,6 @@
   width: 100%;
 }
 
-@media (orientation: portrait) {
-  .header {
-    height: 90px;
-  }
-}
-
-@media (orientation: landscape) {
-  .header {
-    height: 130px;
-  }
+.header {
+  height: 130px;
 }

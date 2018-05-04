@@ -1,4 +1,4 @@
-<div class="stats result">
+<div class="stats result" [hidden]="player.data.goal">
   <table style="width:100%;border:none;">
     <thead>
     <tr>
@@ -28,7 +28,7 @@
   </table>
 </div>
 
-<div class="stats result">
+<div class="stats result" [hidden]="player.data.goal">
   <table style="width:100%;border:none;">
     <thead>
     <tr>
@@ -58,7 +58,7 @@
   </table>
 </div>
 
-<div class="stats result">
+<div class="stats result" [hidden]="!player.data.goal">
   <table style="width:100%;border:none;">
     <thead>
     <tr>

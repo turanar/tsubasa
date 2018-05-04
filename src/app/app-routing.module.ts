@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {BaseStatsComponent} from './base-stats/base-stats.component';
-import {SpecialSkillsComponent} from './special-skills/special-skills.component';
+import {BaseStatsComponent} from './pages/base-stats/base-stats.component';
+import {SpecialSkillsComponent} from './pages/special-skills/special-skills.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/base-stats', pathMatch: 'full' },

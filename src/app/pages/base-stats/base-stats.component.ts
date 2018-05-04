@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Player } from '../classes/player';
+import { Player } from '../../classes/player';
 import { LocalStorage } from '@ngx-pwa/local-storage';
-import {PlayerData} from '../classes/playerdata';
+import {PlayerData} from '../../classes/playerdata';
 
 @Component({
   selector: 'app-base-stats',

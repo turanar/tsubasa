@@ -10,12 +10,14 @@ import { HammerGestureConfig } from './myhammer';
 import {PlayerStatsComponent} from './player-stats/player-stats.component';
 import { PlayerStatsResultComponent } from './player-stats-result/player-stats-result.component';
 import { AppRoutingModule } from './/app-routing.module';
-import { BaseStatsComponent } from './base-stats/base-stats.component';
-import { SpecialSkillsComponent } from './special-skills/special-skills.component';
+import { BaseStatsComponent } from './pages/base-stats/base-stats.component';
+import { SpecialSkillsComponent } from './pages/special-skills/special-skills.component';
 import { CovalentLayoutModule } from '@covalent/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CovalentStepsModule} from '@covalent/core';
 import {MatIconModule, MatListModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
+import {MatSlideToggleModule} from '@angular/material';
 
 
 export class MyHammerConfig extends HammerGestureConfig  {
@@ -43,7 +45,9 @@ export class MyHammerConfig extends HammerGestureConfig  {
     AppRoutingModule,
     CovalentLayoutModule,
     CovalentStepsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatSlideToggleModule
   ],
   providers: [{
     provide: HAMMER_GESTURE_CONFIG,

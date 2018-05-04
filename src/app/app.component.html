@@ -1,16 +1,17 @@
 <td-layout style="background-color: transparent">
   <td-navigation-drawer sidenavTitle="Navigation">
     <mat-nav-list>
+      <a mat-list-item>
+          <mat-slide-toggle [(ngModel)]="player.data.goal" (change)="onChange($event)">Goal</mat-slide-toggle>
+      </a>
       <a routerLink="base-stats" mat-list-item [tdLayoutClose]="true" ><mat-icon>person</mat-icon>Base Stats</a>
       <a routerLink="special-skills" mat-list-item [tdLayoutClose]="true"><mat-icon>fitness_center</mat-icon>Special Skills</a>
     </mat-nav-list>
   </td-navigation-drawer>
   <td-layout-nav>
     <div td-toolbar-content [tdLayoutToggle]="true"  style="height: 100%;width: 100%">
-      <div>
 
-      </div>
     </div>
-    <router-outlet></router-outlet>
+    <router-outlet ></router-outlet>
   </td-layout-nav>
 </td-layout>

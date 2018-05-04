@@ -16,6 +16,8 @@ body {
 @media (orientation: portrait) {
   body {
     background-size: 200% auto;
+    background-image: url(assets/banner.png);
+    background-repeat: no-repeat;
   }
 }
 
