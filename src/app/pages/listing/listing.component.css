@@ -20,44 +20,27 @@
   }
 }
 
-.class-R {
-  background-image: url('../../../assets/class-r.png');
-  -webkit-background-size: 50%;
-  background-size: 50%;
+.card {
   background-position: 0 0;
   background-repeat: no-repeat;
   width:100%;
   text-align: right;
 }
 
+.class-R {
+  background-image: url('../../../assets/class-r.png');
+}
+
 .class-SSR {
   background-image: url('../../../assets/class-SSR.png');
-  -webkit-background-size: 50%;
-  background-size: 50%;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width:100%;
-  text-align: right;
 }
 
 
 .class-SR {
   background-image: url('../../../assets/class-SR.png');
-  -webkit-background-size: 50%;
-  background-size: 50%;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width:100%;
-  text-align: right;
 }
 
 
 .class-UR {
   background-image: url('../../../assets/class-UR.png');
-  -webkit-background-size: 50%;
-  background-size: 50%;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width:100%;
-  text-align: right;
 }

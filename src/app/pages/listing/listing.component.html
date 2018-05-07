@@ -8,8 +8,8 @@
   </div>
   <div class="row search-result">
     <ng-container *ngFor="let player of players; let i = index">
-       <div class="w-100 d-sm-none" *ngIf="i%3===0"></div>
-        <div class="col-lg-4 col-sm" style="margin-bottom: 15px;">
+        <div class="w-100 d-sm-none" *ngIf="i%3===0"></div>
+        <div class="col-sm-6 col-lg-4 col-xl-3 col-md-6 col-sm" style="margin-bottom: 15px;">
           <div class="card" ngClass="class-{{ player._source.class }}">
             <div class="card-body">
               <h5 class="card-title">{{ player._source.name }}</h5>
