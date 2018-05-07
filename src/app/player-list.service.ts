@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as elasticsearch from 'elasticsearch';
+import { environment } from '../environments/environment';
 
 @Injectable()
 export class PlayerListService {
@@ -10,10 +11,17 @@ export class PlayerListService {
   }
 
   private connect() {
-    this.client = new elasticsearch.Client({
-      host: 'localhost:9200',
-      log: 'info'
-    });
+    if(environment.production) {
+      this.client = new elasticsearch.Client({
+        host: 'http://tsubasa.turanar.net/json',
+        log: 'error'
+      });
+    } else {
+      this.client = new elasticsearch.Client({
+        host: 'http://localhost:9200',
+        log: 'info'
+      });
+    }
   }
 
   fullTextSearch(_index, _type, _field, _queryText): any {
