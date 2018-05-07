@@ -1,0 +1,63 @@
+.search-bar {
+  position:fixed;
+  width:100%;
+  top: 130px;
+  z-index: 999;
+}
+
+.search-result {
+  position: relative;
+  top: 50px;
+}
+
+.search-result .card {
+  cursor: pointer;
+}
+
+@media (orientation: portrait) {
+  .search-bar {
+    top: 90px;
+  }
+}
+
+.class-R {
+  background-image: url('../../../assets/class-r.png');
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width:100%;
+  text-align: right;
+}
+
+.class-SSR {
+  background-image: url('../../../assets/class-SSR.png');
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width:100%;
+  text-align: right;
+}
+
+
+.class-SR {
+  background-image: url('../../../assets/class-SR.png');
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width:100%;
+  text-align: right;
+}
+
+
+.class-UR {
+  background-image: url('../../../assets/class-UR.png');
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width:100%;
+  text-align: right;
+}

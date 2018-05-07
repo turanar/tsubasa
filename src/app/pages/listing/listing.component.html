@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row search-bar">
+    <div class="col-sm">
+      <div class="form-group" style="background-color: white">
+        <input type="search" (keyup)="search($event)" class="form-control" placeholder="filter by name, title and rarity : ie. tsuba aura ssr">
+      </div>
+    </div>
+  </div>
+  <div class="row search-result">
+    <ng-container *ngFor="let player of players; let i = index">
+       <div class="w-100 d-sm-none" *ngIf="i%3===0"></div>
+        <div class="col-lg-4 col-sm" style="margin-bottom: 15px;">
+          <div class="card" ngClass="class-{{ player._source.class }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ player._source.name }}</h5>
+              <p class="card-text"><i>{{ player._source.title }}</i></p>
+            </div>
+          </div>
+        </div>
+    </ng-container>
+  </div>
+</div>
+

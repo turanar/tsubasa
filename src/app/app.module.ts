@@ -18,6 +18,8 @@ import {CovalentStepsModule} from '@covalent/core';
 import {MatIconModule, MatListModule} from '@angular/material';
 import {MatCardModule} from '@angular/material';
 import {MatSlideToggleModule} from '@angular/material';
+import { ListingComponent } from './pages/listing/listing.component';
+import {PlayerListService} from './player-list.service';
 
 
 export class MyHammerConfig extends HammerGestureConfig  {
@@ -33,7 +35,8 @@ export class MyHammerConfig extends HammerGestureConfig  {
     PlayerStatsComponent,
     PlayerStatsResultComponent,
     BaseStatsComponent,
-    SpecialSkillsComponent
+    SpecialSkillsComponent,
+    ListingComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,7 @@ export class MyHammerConfig extends HammerGestureConfig  {
     MatCardModule,
     MatSlideToggleModule
   ],
-  providers: [{
+  providers: [PlayerListService, {
     provide: HAMMER_GESTURE_CONFIG,
     useClass: MyHammerConfig
   }],

@@ -1,6 +1,9 @@
 import { Stats} from './stats';
 
 export class PlayerData {
+  name: string;
+  title: string;
+  class: string;
   goal: boolean = false;
   base: Stats = new Stats(5000);
   ts: Stats = new Stats(100);
