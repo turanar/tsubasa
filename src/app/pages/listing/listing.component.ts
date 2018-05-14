@@ -37,7 +37,7 @@ export class ListingComponent implements OnInit {
 
     if (event.timeStamp - this.lastKeypress > 100) {
       this.queryText = event.target.value;
-      this.es.fullTextSearch('tsubasa', 'field', 'name', query).then(
+      this.es.fullTextSearch('tsubasa', 'player', 'name', query).then(
         response => {
           this.players = response.hits.hits;
         }, error => {

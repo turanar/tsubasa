@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as elasticsearch from 'elasticsearch';
 import { environment } from '../environments/environment';
+import {PlayerData} from './classes/playerdata';
 
 @Injectable()
 export class PlayerListService {
@@ -28,7 +29,7 @@ export class PlayerListService {
     return this.client.search({
       index: _index,
       type: _type,
-      filterPath: ['hits.hits._source', 'hits.total', '_scroll_id'],
+      filterPath: ['hits.hits._source', 'hits.total', '_scroll_id','hits.hits._id'],
       body: {
         'query': {
           'query_string': {
@@ -38,6 +39,15 @@ export class PlayerListService {
       },
       // response for each document with only 'fullname' and 'address' fields
       '_source': ['name', 'title', 'class']
+    });
+  }
+
+  fetch(_index, _type, _id): Promise<any> {
+    return this.client.getSource({
+      index: _index,
+      type: _type,
+      id: _id,
+      _source: true
     });
   }
 }

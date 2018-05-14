@@ -6,6 +6,7 @@ import {ListingComponent } from './pages/listing/listing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/base-stats', pathMatch: 'full' },
+  { path: 'base-stats/:playerId', component: BaseStatsComponent },
   { path: 'base-stats', component: BaseStatsComponent },
   { path: 'special-skills', component: SpecialSkillsComponent },
   { path: 'listing', component: ListingComponent}

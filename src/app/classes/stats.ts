@@ -1,4 +1,8 @@
 export class Stats {
+  name: string;
+  title: string;
+  class: string;
+  goal: boolean;
   dribble: number = 0;
   shot: number = 0;
   pass: number = 0;
